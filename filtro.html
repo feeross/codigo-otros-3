@@ -5,20 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="filtro.css">
+  <link rel="stylesheet" href="./filtro.css"> <!-- Estaba mal la ruta del css -->
   <title>Filtros en JS</title>
 </head>
 
 <body>
+  <!-- lo que intente hacer fue que los elementos se agregaran al div
+  note que en el js se usaban los queryselectors pero en el html
+  no venian en las clases -->
 
   <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
+    <!-- agregue la clase input ya que estamos usando un Queryselector -->
+      <input class="input"  type="text" placeholder="Seleccioná un color o tipo">
+      <!-- agregue la clase botonDeFiltro ya que estamos usando un Queryselector -->
+      <button class="botonDeFiltro">Filtrar</button>
       <h1>Lista de productos </h1>
       <div id="lista-de-productos">
     </div>
   </div>
-  <script src="../filtro.js"></script>
+  <script src="./filtro.js"></script> <!-- Se corrigio la ruta del js -->
 </body>
 
 </html>
